@@ -157,7 +157,7 @@ function EliminarProducto(event) {
         if (snapshot.exists()) {
             remove(refS(db, 'productos/' + id))
                 .then(() => {
-                    alert("Servicio eliminado con éxito.");
+                    alert("Producto eliminado con éxito.");
                     limpiarInputs();
                     MostrarProductos();
                 })

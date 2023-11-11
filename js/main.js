@@ -7,12 +7,12 @@ import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "https://w
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAiRwuCoJMBB9Osw0MwvLpi9xHZtwirZYM",
-  authDomain: "pf-progweb.firebaseapp.com",
-  projectId: "pf-progweb",
-  storageBucket: "pf-progweb.appspot.com",
-  messagingSenderId: "466440754580",
-  appId: "1:466440754580:web:94343f9debd31abcdc2b81"
+    apiKey: "AIzaSyAiRwuCoJMBB9Osw0MwvLpi9xHZtwirZYM",
+    authDomain: "pf-progweb.firebaseapp.com",
+    projectId: "pf-progweb",
+    storageBucket: "pf-progweb.appspot.com",
+    messagingSenderId: "466440754580",
+    appId: "1:466440754580:web:94343f9debd31abcdc2b81"
 };
 
 // Initialize Firebase
@@ -28,11 +28,11 @@ function login() {
     const passwd = document.getElementById('passwd').value;
 
     signInWithEmailAndPassword(auth, email, passwd).then(() => {
-        window.location.href = "/html/main.html";
-    })
-    .catch(() => {
-        console.log("El correo o la contraseña son incorrectas");
-    });
+            window.location.href = "/html/main.html";
+        })
+        .catch(() => {
+            alert("El correo o la contraseña son incorrectas");
+        });
 }
 
 btnLogin.addEventListener('click', () => {
