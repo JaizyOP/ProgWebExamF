@@ -1,0 +1,348 @@
+/* Selector de Etiqueta */
+
+body {
+    background-color: black;
+    color: white;
+    text-align: justify;
+    font-family: monospace;
+}
+
+
+/* SELECTORES DE CLASES */
+
+.imgTitulo {
+    width: 125x;
+    height: 87.5px;
+    margin: 5px 35px 5px 40px;
+    justify-items: center;
+    border-radius: 5px;
+}
+
+.imgBiografia {
+    justify-items: center;
+    border-radius: 5px;
+    box-shadow: 1px 2px 2px #008f39, 0 0 25px #008f39, 0 0 25px #008f39;
+    margin-bottom: 50px;
+}
+
+.imgAlbum {
+    width: 35%;
+    height: 35%;
+    justify-items: center;
+    border-radius: 1%;
+    margin: 1% 5% 1% 35%;
+    border-radius: 5%;
+}
+
+.subtitulos {
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 100%;
+    padding: 0 0 0 0.5%;
+    color: white;
+}
+
+.subfecha {
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 75%;
+    padding: 0 0 0 0.5%;
+    color: white;
+}
+
+.encabezado-articulo {
+    text-align: center;
+    color: white;
+    margin: 1em 2em;
+    font-size: 175%;
+    text-shadow: 1px 2px 2px black, 0 0 50px #008f39, 0 0 50px #008f39;
+    margin-bottom: 10px;
+}
+
+.inlineli {
+    display: inline;
+    margin: 5%;
+}
+
+.texto {
+    text-align: justify;
+    font-family: Segoe UI, Tahoma, Geneva, 'Verdana', sans-serif;
+    font-size: 15px;
+    padding: 0 25px;
+    color: white;
+    margin-top: 20px;
+}
+
+
+/* SELECTOR DE ID */
+
+#contenedor {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    max-width: 0 auto;
+    border-radius: 2.5%;
+}
+
+#menu,
+#menumerch {
+    height: 5%;
+    background-color: black;
+    font-size: 125%;
+    padding: 5px;
+}
+
+#contenido {
+    height: auto;
+    width: 55%;
+    background-color: black;
+    display: inline-block;
+    text-align: justify;
+    padding: 2% 1% 1% 1%;
+    background-image: url(/img/albumfeid.jpg);
+    background-size: cover;
+}
+
+#cont {
+    height: 50%;
+    width: 80%;
+    background-color: black;
+    display: flex;
+    text-align: center;
+    padding: 2% 1% 1% 1%;
+    margin: 10px 20px 10px 20px;
+}
+
+#fueraSeccion {
+    height: 75%;
+    width: 35%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 2% 1% 1% 5%;
+}
+
+#pie {
+    height: 10%;
+    width: auto;
+    background-color: rgb(161, 196, 38);
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.menuli {
+    display: block;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin: 10px;
+    color: white;
+}
+
+#imgMerch {
+    height: 60%;
+    width: 100%;
+    height: auto;
+}
+
+#imgUpdate {
+    color: #002500;
+}
+
+.imgagg {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 40%;
+    justify-content: center;
+    height: 240px;
+    width: 240px;
+    background-image: url('/img/icon-agg.png');
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+}
+
+.card-agg {
+    display: grid;
+    margin: 15px;
+    width: 350px;
+    height: auto;
+    /* Puedes ajustar este valor según el espacio deseado */
+    background-color: white;
+    border: 5px solid rgb(161, 196, 38);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    /* Alinea los elementos en columna */
+    align-items: center;
+    /* Centra los elementos horizontalmente */
+    justify-content: center;
+    /* Centra los elementos verticalmente */
+    margin: 15px;
+    width: 350px;
+    height: auto;
+    /* Puedes ajustar este valor según el espacio deseado */
+    background-color: white;
+    border: 5px solid rgb(161, 196, 38);
+    border-radius: 10px;
+}
+
+.card-title {
+    width: auto;
+    height: 15%;
+    font-size: 20px;
+    color: #000000;
+}
+
+.card-precio {
+    width: auto;
+    height: 10%;
+    font-size: 15px;
+    margin-top: 25px;
+    color: green;
+}
+
+.card-text {
+    width: auto;
+    height: 35%;
+    font-size: 15px;
+    color: #002500;
+    margin-bottom: 15%;
+}
+
+.btn-comprar {
+    width: 40%;
+    height: 25%;
+    background-color: blue;
+    /* Color de fondo */
+    color: white;
+    /* Color del texto */
+    border: none;
+    padding: 10px 20px;
+    /* Espaciado interno del botón */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    font-size: 16px;
+    /* Tamaño del texto */
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.btnEditar {
+    width: 70%;
+    height: 15%;
+    background-color: green;
+    /* Color de fondo */
+    color: white;
+    /* Color del texto */
+    border: none;
+    padding: 10px 10px 10px 10px;
+    /* Espaciado interno del botón */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    font-size: 16px;
+    /* Tamaño del texto */
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+
+/* Estilo al pasar el cursor por encima del botón */
+
+.btn-comprar:hover {
+    background-color: rgb(108, 108, 233);
+    /* Cambia el color de fondo al pasar el cursor */
+}
+
+.btn-eliminar {
+    width: 40%;
+    height: 25%;
+    background-color: red;
+    /* Color de fondo */
+    color: white;
+    /* Color del texto */
+    border: none;
+    padding: 10px 20px;
+    /* Espaciado interno del botón */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    font-size: 16px;
+    /* Tamaño del texto */
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.btn-eliminar:hover {
+    background-color: rgb(226, 69, 69);
+    /* Cambia el color de fondo al pasar el cursor */
+}
+
+
+/* SELECTOR DE ETIQUETA */
+
+hr {
+    width: 100%;
+    height: 5%;
+    border-color: rgb(161, 196, 38);
+    margin: 0.1% auto;
+    padding-bottom: 1%;
+}
+
+ul {
+    text-align: center;
+}
+
+li a:hover {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    text-shadow: 1px 2px 2px white, 0 0 25px #008f39, 0 0 25px #008f39;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(161, 196, 38);
+}
+
+ol {
+    list-style-type: decimal;
+    font-size: 125%;
+}
+
+b {
+    color: #008f39;
+    font-size: 1.1em;
+    text-shadow: 1px 2px 2px white, 0 0 10px white, 0 0 10px white;
+}
+
+
+/* Establecer estilos flex solo dentro de un @media query */
+
+@media only screen and (max-width: 768px) {
+    .imgagg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 240px;
+        width: 240px;
+        background-image: url('/img/icon-agg.png');
+        background-color: white;
+        background-size: cover;
+        background-position: center;
+        border: none;
+        cursor: pointer;
+    }
+}

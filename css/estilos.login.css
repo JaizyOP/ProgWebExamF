@@ -1,0 +1,66 @@
+body {
+    font-family: monospace;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    background-image: url(/img/fondoLogin.jpg);
+    background-size: contain;
+}
+
+.contenedor {
+    width: 350px;
+    margin: 0 auto;
+    align-items: center;
+    background-color: white;
+    padding: 45px;
+    border-radius: 15px;
+}
+
+form {
+    background-color: white;
+    color: #008f39;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 90%;
+    padding: 8px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.titulo {
+    font-size: 30px;
+}
+
+.lbl {
+    font-size: 20px;
+}
