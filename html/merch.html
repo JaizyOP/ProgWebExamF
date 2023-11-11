@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/estilos-main.css" />
+    <script type="module" src="../js/merch.js"></script>
+
+    <title>MERCH</title>
+</head>
+
+<body>
+    <center>
+        <div id="contenedor">
+            <header>
+                <img class="imgTitulo" src="/img/FeidFavicon.png" alt="LogoTitulo" />
+                <!--ENCABEZADO PRINCIPAL-->
+            </header>
+
+            <hr />
+
+            <hr>
+
+            <div id="menumerch">
+                <!--BARRA DE NAVEGACION DONDE VA EL MENÚ-->
+                <ul>
+                    <li class="inlineli">
+                        <a href="../index.html">LOGIN</a>
+                    </li>
+
+                    <li class="inlineli">
+                        <a href="/html/main.html">WEB OFICIAL</a>
+                    </li>
+
+                    <li class="inlineli">
+                        <a href="/html/merch.html">MERCH</a>
+                    </li>
+                </ul>
+            </div>
+
+            <hr />
+            <hr>
+
+            <div id="cont">
+                <div id="aggProd" class="card-agg">
+                    <div class="card-body">
+                        <button class="imgagg" alt="agg" data-bs-toggle="modal" data-bs-target="#modalAgg"></button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Modal Agregar -->
+
+            <div class="modal fade" id="modalAgg" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="color: black;">
+                <div class="modal-dialog">
+                    <div class="modal-content" style="text-align: initial;">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar Articulo</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="id" class="col-form-label">Codigo:</label>
+                                    <input type="number" class="form-control" id="lblCodigo" />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="pomArt" class="col-form-label">Nombre del Articulo:</label>
+                                    <input type="text" class="form-control" id="lblNomArt" />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="precio" class="col-form-label">Precio:</label>
+                                    <input type="number" class="form-control" id="lblPrecio" />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="Descripcion" class="col-form-label">Descripcion:</label>
+                                    <textarea class="form-control" id="lblDesc"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="Descripcion" class="col-form-label">Selecciona una imagen:</label>
+                                    <input type="file" id="archivo">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="btnAgregar" class="btn btn-success">Agregar</button>
+                            <button type="button" id="btnCerrar" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Actualizar -->
+
+            <div class="modal fade" id="modalActu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="color: black;">
+                <div class="modal-dialog">
+                    <div class="modal-content" style="text-align: initial;">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Actualizar Articulo</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="id" class="col-form-label">Codigo:</label>
+                                    <input type="number" class="form-control" id="codigoAct" />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="pomArt" class="col-form-label">Nombre del Articulo:</label>
+                                    <input type="text" class="form-control" id="nomAct" />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="precio" class="col-form-label">Precio:</label>
+                                    <input type="number" class="form-control" id="precioAct" />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="Descripcion" class="col-form-label">Descripcion:</label>
+                                    <textarea class="form-control" id="descAct"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="Descripcion" class="col-form-label">Selecciona una imagen:</label>
+                                    <input type="file" id="imgUpdate">
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" id="btnEliminar" class="btn btn-danger">Eliminar</button>
+                            <button type="button" id="btnActualizarProd" class="btn btn-info">Actualizar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div id="pie">
+                <footer>
+                    <!--PIE DE PAGINA-->
+                    Tirado Díaz Jesús Javier@ Feid Fan Page
+                </footer>
+            </div>
+        </div>
+    </center>
+</body>
+
+</html>
