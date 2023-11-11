@@ -28,6 +28,7 @@ function login() {
     const passwd = document.getElementById('passwd').value;
 
     signInWithEmailAndPassword(auth, email, passwd).then(() => {
+            alert("Se inicio sesion correctamente");
             window.location.href = "/html/main.html";
         })
         .catch(() => {
