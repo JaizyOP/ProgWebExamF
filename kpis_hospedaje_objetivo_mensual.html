@@ -12,7 +12,7 @@
       function isLoggedIn() {
         return fetch("https://theinngroup.eu.qlikcloud.com/api/v1/users/me", {
           method: 'GET',
-          mode: 'no-cors',
+          mode: 'cors',
           credentials: 'include',
           headers: {
             'Content-Type': 'application/json',
