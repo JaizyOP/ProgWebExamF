@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script type="text/javascript">
+    const webIntegrationId = "kQSg1yH0K8mADx4x9dXki0MuOYLpb2Qi";
+    function login() {
+      function isLoggedIn() {
+        return fetch("https://theinngroup.eu.qlikcloud.com/api/v1/users/me", {
+          method: 'GET',
+          mode: 'cors',
+          credentials: 'include',
+          headers: {
+            'Content-Type': 'application/json',
+            'qlik-web-integration-id': webIntegrationId,
+          },
+        }).then(response => {
+          return response.status === 200;
+        });
+      }
+      return isLoggedIn().then(loggedIn => {
+        if (!loggedIn) {
+          // check login
+            window.top.location.href = "https://theinngroup.eu.qlikcloud.com/login?qlik-web-integration-id=" + webIntegrationId + "&returnto=" + top.location.href;
+          throw new Error('not logged in');
+        }
+      });
+    }
+	login()
+  </script>
+</head>
+
+<body style="height:600px;">
+	<iframe 
+    src="https://theinngroup.us.qlikcloud.com/single/?appid=da947855-a25d-474c-8cf0-e9706e3f065b&sheet=71ee988b-98a2-41fa-aa9d-26e296011b83&theme=horizon&opt=ctxmenu,currsel&select=$::%3DDual(Year(%5BFecha%5D)%26'-'%26Month(%5BFecha%5D)%2CMonthStart(%5BFecha%5D)),45231" 
+    style="border:none;width:100%;height:100%;"></iframe>
+</body>
+
+</html>
