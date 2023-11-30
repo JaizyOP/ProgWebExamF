@@ -5,7 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 75vh;
-    background-image: url(/img/fondoLogin.jpg);
+    background-image: url(img/fondoLogin.jpg);
     background-size: auto;
 }
 
